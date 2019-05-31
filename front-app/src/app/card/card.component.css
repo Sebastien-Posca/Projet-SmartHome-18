@@ -1,0 +1,85 @@
+.title {
+  font-size: 10pt;
+  width: 70%;
+  padding-left: 1vw;
+}
+
+.status {
+  display: block;
+  margin: 1%;
+  padding: 0;
+  width: 5vh;
+  height: 5vh;
+
+}
+
+.location{
+  height: 10vh;
+  width: 10vw;
+}
+
+.description {
+  font-size: 10pt;
+}
+
+.header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.card {
+  margin: 1vw;
+  border-width: 0.5vw;
+  max-width: 19vw;
+  padding: 10px;
+}
+
+.meta {
+  font-size: 10pt;
+  color: #919191;
+}
+
+.header {
+  width: 100%;
+  margin: 1px;
+}
+
+.profile {
+  padding: 0;
+  margin-left: -15px;
+}
+
+img {
+  display: block;
+  margin: auto;
+  margin-bottom: 1vh;
+}
+
+mat-card-header {
+  margin: 0;
+}
+
+mat-card-content {
+  padding: 0vw;
+}
+
+mat-card-actions {
+  width: 100%;
+  margin: auto;
+  padding: 0px;
+  margin-top: 1vh;
+}
+
+.comment-button {
+  display: block;
+  margin: auto;
+  margin-bottom: 2vh;
+}
+
+.urgency{
+  margin-right: 0;
+  position: relative;
+  top: 3vh;
+  right: 2vw;
+  font-size: 11px;
+}

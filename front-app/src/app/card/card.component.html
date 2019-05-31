@@ -1,0 +1,41 @@
+
+
+<mat-card class="card" name="card" id="card">
+  {{displayImp(incident.importance)}}
+
+  <mat-card-header class="header" >
+      <div class="profile">
+        <img class="profile-img" mat-card-avatar id="header-image" class="header-image" src="{{setUserPicture(incident.reporterId)}}">
+        <mat-card-subtitle>{{displayRepName(incident.reporterId)}}<br/></mat-card-subtitle>
+      </div>
+
+      <div class="title">{{incident.title}}</div>
+
+      <i class="material-icons status"  mat-card-sm-image >{{displayStatus(incident.status)}}</i>
+
+      <div class="urgency">{{displayEmergency(incident.importance)}}</div>
+
+
+  </mat-card-header>
+
+  <img class="location" src="{{setLocationPicture(incident.locationid)}}">
+
+  <mat-card-content>
+    <p class="description">{{incident.description}}</p>
+  </mat-card-content>
+
+  <span class="meta">
+        {{displayType(incident.typeId)}}
+      <br/>
+      {{displayDate(incident.incidentDate)}}
+  </span>
+
+  <mat-card-actions>
+    <input class="w3-button w3-blue comment-button" type="button" value="Commentaires"   style="font-size:0.8vw" (click)=diplayComment(incident) >
+  </mat-card-actions>
+
+</mat-card>
+
+<app-comments [incident]="incident"></app-comments>
+
+

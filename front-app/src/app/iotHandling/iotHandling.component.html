@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Configuration des objets connectés</h1>
+<app-navbar></app-navbar>
+
+<div class="gicon">
+        <i class="material-icons" style="font-size: 5vw">directions_car</i>
+</div>
+
+<div class="garage">
+  <div id="stateDoor"></div>
+
+  <br />
+
+
+<input class="w3-button w3-blue" type="button" value="Mode bricolage"   style="font-size:1.3vw" (click)="garageMode()" >
+
+<br />
+<br />
+<br />
+
+<input class="w3-button w3-blue" type="button" value="Ouvrir la porte du garage"   style="font-size:1.3vw" (click)="openGarageDoor()" >
+
+<br />
+<br />
+<br />
+
+<input class="w3-button w3-blue" type="button" value="Fermer la porte du garage"   style="font-size:1.3vw" (click)="closeGarageDoor()" >
+
+</div>
+
+<div class="sicon">
+        <i class="material-icons" style="font-size: 5vw">security</i> </div>
+
+<div class="security">
+
+  <div id="stateFire"></div>
+  <br/>
+
+  <input class="w3-button w3-blue" type="button" value="Ouvrir les volets et les fenêtres"   style="font-size:1.3vw" (click)="openWindows()" >
+  <br />
+  <br />
+  <br />
+  <input class="w3-button w3-blue" type="button" value="Sécuriser la maison"   style="font-size:1.3vw" (click)="secureHome()" >
+  <br />
+  <br />
+  <br />
+  <input class="w3-button w3-blue" type="button" value="Eteindre l'alarme"   style="font-size:1.3vw" (click)="turnoffAlarm()" >
+
+</div>
+
+
+</body>
+</html>

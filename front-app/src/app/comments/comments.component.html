@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div id="comments" class="w3-modal" >
+  <div class="w3-modal-content w3-animate-opacity w3-card-4">
+    <header id="header" class="w3-container">
+      <span onclick="document.getElementById('comments').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <h2 id="title"></h2>
+    </header>
+    <div class="w3-container">
+      <br>
+      <p id="commentsContent"></p>
+    </div>
+    <footer class="w3-container w3-grey">
+      <h3>Ajouter un commentaire</h3>
+    </footer>
+    <br>
+    <p>
+    <textarea type="textarea"#addedComment id="addedCommentContent" class="inputComm"></textarea>
+    <input class="w3-button w3-blue" type="button" value="Envoyer"   style="font-size:0.8vw" (click)="postComment(addedComment.value)" >
+    </p>
+    <br>
+  </div>
+  <br>
+</div>
+
+</body>
+</html>

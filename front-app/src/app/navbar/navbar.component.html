@@ -1,0 +1,41 @@
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<ul >
+  <div class="navbarwrapper">
+
+    <li><a href="javascript:void(0)" routerLink="/form">Déclarer un incident </a></li>
+    <li><a href="javascript:void(0)" (click)="goToDeclaredList()" >Mes incidents déclarés </a></li>
+    <li><a href="javascript:void(0)" (click)="goToAssignedList()">Mes incidents assignés </a></li>
+    <li><a href="javascript:void(0)" (click)="goToIotHandling()">Gérer IoT </a></li>
+  </div>
+
+  <div class="dropdown">
+    <i class="material-icons" (click)="displayHelp()" style="position: relative; top: 1.3vh; margin-left: 1vw">help</i>
+    <div class="dropdown-content">
+      <div id="help" class="help" >
+        <h2>Urgence :</h2>
+        <p>  <font color="red">ROUGE</font> =  Urgent </p>
+        <p>  <font color="orange">ORANGE</font> = Moyen </p>
+        <p>  <font color="green">VERT</font> =  Faible</p>
+        <br>
+        <h2>Statut :</h2>
+        <p>  <i class="material-icons">visibility_off</i> =  En attente d'attribution </p>
+        <p>  <i class="material-icons">visibility</i> =  Attribué </p>
+        <p>  <i class="material-icons">schedule</i> =  En cours </p>
+        <p>  <i class="material-icons">done</i> =  Terminé </p>
+        <br>
+        <h2>Boutons :</h2>
+        <p>  <i class="material-icons">arrow_drop_down_circle</i> =  Afficher plus d'incidents </p>
+        <p>  <i class="material-icons">hourglass_full</i> =  Afficher les incidents non résolues </p>
+        <br>
+  </div>
+    </div>
+  </div>
+
+
+  <li class="logoff"><a href="javascript:void(0)"  (click)="logOut()">Se déconnecter </a></li>
+
+</ul>

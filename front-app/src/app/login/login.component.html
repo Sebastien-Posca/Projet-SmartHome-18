@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"   rel="stylesheet"  type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+
+<br><br>
+<h1>Bienvenue sur SmartHome</h1>
+<br><br>
+<form >
+  <div class="container">
+    <label class="nom" for="username" ><b>Nom d'utilisateur</b></label>
+    <input type="text" placeholder="Entrer nom d'utilisateur" id="username" #username required>
+    <br><br>
+
+    <label class="pswd" for="password" ><b>Mot de passe</b></label>
+    <input type="password" placeholder="Entrer mot de passe" id="password" #password required>
+
+    <button class="envoyer" type="button" (click)="send($event, username.value, password.value)">Se connecter</button>
+
+  </div>
+</form>
+</body>
+</html>

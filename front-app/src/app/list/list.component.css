@@ -1,0 +1,65 @@
+h1{
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bolder;
+  text-align: center;
+}
+
+.location{
+  height: 10vh;
+  width: 10vw;
+}
+
+.material-icons{
+  position: relative;
+  cursor:pointer;
+
+}
+
+.bottom {
+    margin: 0px;
+}
+
+i:not(.material-icons){
+  position: absolute;
+  padding: 1.5vw;
+  top: 8px;
+  right: 16px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+.help{
+  position:absolute;
+  font-size:1.5vw;
+  left:3vw;
+  bottom:9.5vh;
+}
+
+
+.card {
+  margin: 1vw;
+  border-width: 0.5vw;
+  max-width: 19vw;
+
+}
+
+html, body{
+  background-color: rgb(222, 226, 230) !important;
+  height: 100vh;
+}
+
+
+

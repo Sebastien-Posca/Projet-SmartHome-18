@@ -1,0 +1,50 @@
+h1{
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bolder;
+  text-align: center;
+}
+
+html, body{
+  background-color: rgb(222, 226, 230) !important;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.gicon{
+  position: absolute;
+  left: 25vw;
+  top: 16vh;
+}
+
+.sicon{
+  position: absolute;
+  left: 58vw;
+  top: 15vh;
+}
+
+
+
+.garage{
+  position: absolute;
+  left: 20vw;
+  top: 30vh;
+  align-content: center;
+}
+
+.security{
+  position: absolute;
+  left: 50vw;
+  top : 30vh;
+}
+
+.feedback{
+  color: black;
+  position: absolute;
+  top: 68vh;
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  display: block;
+}

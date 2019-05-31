@@ -1,0 +1,17 @@
+input{
+    position: relative;
+    top: -6vh;
+    left: 3.2vw;
+}
+
+.comments {
+  display: none;
+}
+
+.inputComm {
+  width: 40vw;
+  height: 5vw;
+  margin-bottom: 1vw;
+  margin-left: 2vw;
+}
+

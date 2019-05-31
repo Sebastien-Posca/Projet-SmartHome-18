@@ -1,0 +1,76 @@
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bolder;
+    text-align: center;
+  }
+
+input[type="radio"]{
+    margin-left: 15px;
+}
+
+input[type="reset"]{
+    margin: 30px;
+}
+
+input[type="text"]{
+    size: 50%
+}
+
+i{
+    position: absolute;
+    margin-left: 5vw;
+    vertical-align: text-top;
+    font-size: 3vw
+}
+
+label{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size:1.3vw;
+    font-variant: small-caps;
+}
+
+a{
+    margin-top: 2vw;
+    margin-left: 2vw;
+    font-size: 2vw
+}
+
+html, body{
+    background-color: rgb(222, 226, 230) !important;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+select{
+    font-size: 1.5vw;
+}
+
+.wrap {
+    width: 100%;
+    overflow:auto;
+    padding: 50px;
+    }
+    
+    .fleft {
+        float: left; 
+        height: auto;
+        margin-left: 20%;
+    }
+    
+    .fright {
+        margin-right: 20%;
+        float: right;
+        height: auto;
+
+    }
+
+    input:valid:not(:optional){
+        border: 2px solid rgb(10, 240, 10) !important;
+    } 
+    
+    input:focus, textarea:focus{
+        border: 2px solid blue !important;
+    } 

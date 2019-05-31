@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"   rel="stylesheet"  type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+<h1 style="font-size:2vw">Mes incidents déclarés</h1>
+<app-navbar></app-navbar>
+  <form id="form" class="form" >
+    <div class="wrap" align="center">
+      <div class="fleft">
+
+        <label for="titre" >Titre (*) :</label><br>
+        <input type="text" id="title" #title name="title" placeholder="Nom de l'incident"  style="font-size:1.2vw"   required />
+        <div ng-messages="myForm.title.$error">
+        </div>
+        <br /> <br /> <br />
+
+        <label for="type" >Type (*) :</label><br>
+          <select  id="type" #type >
+            <option  *ngFor="let v of incidentTypes;" [value]="v.typeId">
+              {{v.typeName}}
+            </option>
+          </select>
+        <br /> <br />  <br />
+
+        <label for="desc" >Descritpion :</label><br>
+        <textarea type="text" id="desc" name="desc" #description  placeholder="Description"  style="font-size:1.2vw" rows="6" onfocus="this.select();"></textarea>
+        <br /> <br />  <br />
+
+        <label style="font-size:1vw">(*) champs obligatoires</label><br>
+
+      </div>
+
+      <div class="fright" >
+
+        <label for="location" >Lieu :</label><br>
+        <select  id="location" #location >
+          <option  *ngFor="let v of locations;" [value]="v.locationId">
+            {{v.locationName}}
+          </option>
+        </select>
+        <br/> <br> <br /><br />
+
+        <label name="impName"> Importance (*):</label><br />
+        <input type="radio" id="1" name="imp" value="0"   style="font-size:1.5w" />
+        <label   style="font-size:1.2vw" n>Faible</label>
+        <input type="radio" id="2" name="imp" value="1"   style="font-size:1.5vw" />
+        <label   style="font-size:1.2vw">Moyenne</label>
+        <input type="radio" id="3" name="imp" value="2"   style="font-size:1.5vw" />
+        <label   style="font-size:1.2vw">Forte</label>
+        <input type="radio" id="4" name="imp" value="3"   style="font-size:1.5vw" />
+        <label   style="font-size:1.2vw">Urgente</label>
+        <br> <br /> <br /><br /><br>
+
+        <label  >Date et heure :</label><br />
+        <input type="date" #date style="font-size:1.5vw">
+        <input type="time" name="time" #hour style="font-size:1.5vw">
+        <br /> <br> <br><br><br>
+        <input class="w3-button w3-blue" type="button" value="Envoyer"   style="font-size:1.3vw" (click)="send($event,date.value,hour.value,location.value,title.value,description.value,type.value)" >
+        <input class="w3-button w3-red" type="reset" value="Effacer"   style="font-size:1.3vw" >
+      </div>
+    </div>
+  </form>
+  
+  <div id="failure" class="w3-modal" >
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('failure').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>Un problème est survenu, l'incident n'a pas été envoyé <label></label> </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

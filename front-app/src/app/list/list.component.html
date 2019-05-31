@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+<h1 style="font-size:2vw">{{displayTitle()}}</h1>
+<app-navbar></app-navbar>
+
+<div class="container" *ngIf="incidentList.length > 0">
+  <app-card *ngFor="let incident of incidentList, let i=index" [incident]=incident [nbCard]=i></app-card>
+</div>
+
+
+
+
+
+
+<p></p>
+
+<div class="material-icons" style="position:absolute;right:3vw; bottom:3vh">
+<i class="material-icons"  (click)="getMoreIncidents()" style="font-size:3vw;right:3vw; bottom:2vh">arrow_drop_down_circle</i>
+<i class="material-icons"  (click)="switchUnresolvedIncidentsMode()" style="font-size:3vw;right:3vw; bottom:2vh">hourglass_full</i>
+</div>
+
+</body>
+</html>
+
